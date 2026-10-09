@@ -20,7 +20,7 @@ class LL {
         }
     }
 
-    // Add First
+   
     public void addFirst(int data) {
         Node newNode = new Node(data);
 
@@ -33,7 +33,7 @@ class LL {
         head = newNode;
     }
 
-    // Add Last
+  
     public void addLast(int data) {
         Node newNode = new Node(data);
 
@@ -51,7 +51,7 @@ class LL {
         currNode.next = newNode;
     }
 
-    // Print List
+  
     public void printList() {
         if (head == null) {
             System.out.println("List is empty");
@@ -68,7 +68,7 @@ class LL {
         System.out.println("NULL");
     }
 
-    // Delete First
+ 
     public void deleteFirst() {
         if (head == null) {
             System.out.println("List is empty");
@@ -79,7 +79,7 @@ class LL {
         head = head.next;
     }
 
-    // Delete Last
+   
     public void deleteLast() {
         if (head == null) {
             System.out.println("List is empty");
@@ -104,12 +104,12 @@ class LL {
         secondLast.next = null;
     }
 
-    // Get Size
+   
     public int getSize() {
         return size;
     }
 
-    // Reverse Iterative
+ 
     public void reverseIterate() {
         if (head == null || head.next == null) {
             return;
@@ -130,7 +130,7 @@ class LL {
         head = prevNode;
     }
 
-    // Reverse Recursive
+   
     public Node reverseRecursive(Node head) {
         if (head == null || head.next == null) {
             return head;
